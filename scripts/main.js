@@ -1,2 +1,4 @@
-const myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
+function PlaySound(melody) {
+    var snd = new Audio(melody);
+    snd.play();
+}
