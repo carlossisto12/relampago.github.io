@@ -8,17 +8,8 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-     <?php
-   // New Google Analytics code to set User ID.
-   // $userId is a unique, persistent, and non-personally identifiable string ID.
-   if (isset($userId)) {
-    $gacode = "ga('create', 'UA-162215661-1', { 'userId': '%s' });";
-    echo sprintf($gacode, $userId);
-   } else {
-   $gacode = "ga('create', 'UA-162215661-1');";
-   echo sprintf($gacode);
-   }?>
-   ga('send', 'pageview');
+      ga('create','UA-162215661-1, 'auto'); 
+      ga('send', 'pageview');
       </script>
     <!-- End Google Analytics -->
     <!-- Google Tag Manager -->
